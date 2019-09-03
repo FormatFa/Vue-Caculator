@@ -4,6 +4,7 @@ import App from './App.vue'
 import ElementUI from 'element-ui'
 // 2. 引入样式
 import 'element-ui/lib/theme-chalk/index.css';
+import 'element-ui/lib/theme-chalk/display.css';
 Vue.config.productionTip = false
 
 Vue.use(ElementUI);

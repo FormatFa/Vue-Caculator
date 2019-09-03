@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    
+       <img style="display: block;position:absolute;z-index: 999999;" v-bind:class="{'hidden-lg-and-down':is666}" src="./assets/ying.gif"/>
     <!-- 公式和结果 -->
     <el-row>
       <el-col :span="24"><input  v-on:input="caculate" v-model="expr" class="expr"></input></el-col> 
@@ -85,7 +85,13 @@ export default {
       stackLog:["<h2>test</h2>","23"]
     }
   },
-  compute:{},
+  computed:{
+    is666(){
+
+      return  this.expr!="666666";
+      
+    }
+  },
   methods:{
     
     
@@ -94,10 +100,16 @@ export default {
     },
     // 计算结果,每输入一个字符就计算一次
     caculate:function(){
+      if(this.expr=="666666")
+      {
+        this.result="built by formatfa"
+        return;
+      }
       console.log("= ,计算结果,表达式:"+this.expr);
        let temp = caculateExpr(this.expr);
        this.result = temp.result;
        this.stackLog=temp.stackLog;
+
       console.log("结果:"+ this.result);
 
     },
