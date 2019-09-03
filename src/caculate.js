@@ -144,8 +144,9 @@ function caculate(expr)
             // 如果优先级小于栈顶的，就清空栈
             console.log(`操作符比较: ${operators[item]} vs ${ operators[topOperator]}`);
 
-            // 小于等于 ，如果遇到相同优先级的 1+2*3/2 会先计算2*3=6 6+1=7 7/2=3.5 显然不对，应该是2*3/2=3 3+1=4
-            if(operators[item]<operators[topOperator])
+            // 使用< ，如果遇到相同优先级的 1+2*3/2 会先计算2*3=6 6+1=7 7/2=3.5 显然不对，应该是2*3/2=3 3+1=4
+            // 使用<=对于上面的问题,应该使用括号，如果按照上面的话，计算 14-9-9 会=14 
+            if(operators[item]<=operators[topOperator])
             {
                 // 清空操作符栈
                 emptyStack(operatorsStack,numbersStack,stackLog);
