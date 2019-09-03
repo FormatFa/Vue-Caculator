@@ -1,5 +1,8 @@
 ### 高仿EMUI的计算器
 
+体验地址:
+https://formatfa.github.io/Vue-Caculator/dist/
+
 ![1567477029840](README/1567477029840.png)
 
 ### 前端UI 
