@@ -1,29 +1,15 @@
-# algorithm
+### 高仿EMUI的计算器
 
-## Project setup
-```
-npm install
-```
+![1567477029840](README/1567477029840.png)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 前端UI 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+https://element.eleme.cn/
 
-### Run your tests
-```
-npm run test
-```
+### VueJS 
 
-### Lints and fixes files
-```
-npm run lint
-```
+https://cn.vuejs.org/v2
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Vue CLI3
+
+https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create
