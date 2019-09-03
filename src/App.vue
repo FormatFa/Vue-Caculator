@@ -1,6 +1,7 @@
 <template>
   <div id="app">
 
+    
     <!-- 公式和结果 -->
     <el-row>
       <el-col :span="24"><input  v-on:input="caculate" v-model="expr" class="expr"></input></el-col> 
