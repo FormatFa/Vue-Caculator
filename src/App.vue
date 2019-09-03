@@ -77,12 +77,12 @@ export default {
   },
   data(){
     return {
-      expr:"1+1",
-      result:"2",
+      expr:"",
+      result:"",
       // memory 记忆数字
       memory:0,
       // 处理日志
-      stackLog:["<h2>test</h2>","23"]
+      stackLog:[]
     }
   },
   computed:{

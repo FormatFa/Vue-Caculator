@@ -178,6 +178,7 @@ function caculate(expr)
     console.log(operatorsStack);
     console.log(numbersStack);
     console.log("-----------------计算完成--------------");
+    stackLog.push("输入框清空后，连续输入666666可领取神秘大礼一份");
     // 返回字符串
     return {
         stackLog:stackLog,
